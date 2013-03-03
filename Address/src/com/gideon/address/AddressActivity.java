@@ -124,8 +124,8 @@ public class AddressActivity extends Activity {
 	        for(int i=0;i<jArray.length();i++){
 	                JSONObject json_data = jArray.getJSONObject(i);
 	                JSONObject json_data2 = jArray.getJSONObject(i);
-	                output = output + json_data.getString("Phone_Number") + "\n";
-	                Log.i("log_tag","Phone Number: "+json_data.getInt("Phone_Number"));
+	                output = output + json_data.getString("userid") + "\n";
+	                Log.i("log_tag","userid: "+json_data.getInt("userid"));
 	                output2 = output2 + json_data2.getString("username") + "\n";
 	                Log.i("log_tag","username: "+json_data.getString("username"));
 	        }
@@ -135,7 +135,9 @@ public class AddressActivity extends Activity {
 		}
 			
 		    //Shows the message
-			
+			TextView tvv = (TextView) findViewById(R.id.txtOpp);
+			tvv.setText("CHOOSE YOUR GAMING OPPONENT \n" + output2);
+
 			if (output == "") {
 				
 				setContentView(R.layout.sign_up);
@@ -159,10 +161,7 @@ public class AddressActivity extends Activity {
 			});
 			}
 			else {
-				setContentView(R.layout.pick_opponent);
-				TextView tvv = (TextView) findViewById(R.id.txtOpp);
-				tvv.setText("Hello " + output2);
-							
+				setContentView(R.layout.pick_opponent);				
 			}
 			
 			
