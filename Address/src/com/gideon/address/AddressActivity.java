@@ -63,11 +63,11 @@ public class AddressActivity extends Activity {
 		// Register the listener with the Location Manager to receive location updates
 		locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
 		//GetAddress(lat,lon);
-		/*try {
-		    Thread.sleep(20000);
+		try {
+		    Thread.sleep(10000);
 		} catch(InterruptedException ex) {
 		    Thread.currentThread().interrupt();
-		}*/
+		}
 		setContentView(R.layout.main);
 
     	//Button btnLocation = (Button)findViewById(R.id.btnLocation);
@@ -139,10 +139,10 @@ public class AddressActivity extends Activity {
 			if (output == "") {
 				
 				setContentView(R.layout.sign_up);
-				
-				Button btnSignUp = (Button)findViewById(R.id.buttonSignUp);
+								
+				Button btnSignUp = (Button)findViewById(R.id.btnSignUp);
 				btnSignUp.setOnClickListener(new OnClickListener(){
-				public void onClick(View v){
+				public void onClick(View v){				
 					EditText userName = (EditText)findViewById(R.id.userName);				
 					name = userName.getText().toString();
 					EditText userGender = (EditText)findViewById(R.id.userGender);				
@@ -152,10 +152,9 @@ public class AddressActivity extends Activity {
 					EditText userSchool = (EditText)findViewById(R.id.userSchool);
 					school = userSchool.getText().toString();
 					EditText userRelationship = (EditText)findViewById(R.id.userRelationship);				
-					relationship = userRelationship.getText().toString();					
-					signUp(phone_num, name, birthday, gender, school, relationship);
-					
-			
+					relationship = userRelationship.getText().toString();		
+
+					signUp(phone_num, name, birthday, gender, school, relationship);		
 				}
 			});
 			}
@@ -163,15 +162,7 @@ public class AddressActivity extends Activity {
 				setContentView(R.layout.pick_opponent);
 				TextView tvv = (TextView) findViewById(R.id.txtOpp);
 				tvv.setText("Hello " + output2);
-				
-				
-				
-				
-				
-				
-				
-				
-				
+							
 			}
 			
 			
@@ -208,12 +199,6 @@ public class AddressActivity extends Activity {
 	}
 
 	public void signUp(String phone_number, String uName, String uAge, String uGender, String uSchool, String uRelationship) {
-		// Create a new HttpClient and Post Header
-	
-		
-		
-		
-		// Create a new HttpClient and Post Header
 		HttpClient httpclient2 = new DefaultHttpClient();
 		HttpPost  httppost2 = new HttpPost("http://havefun.byethost15.com/signup.php?userid="+phone_number+"&username="+uName);
 		try {
