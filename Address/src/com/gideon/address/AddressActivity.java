@@ -215,7 +215,7 @@ public class AddressActivity extends Activity {
 		
 		// Create a new HttpClient and Post Header
 		HttpClient httpclient2 = new DefaultHttpClient();
-		HttpPost  httppost2 = new HttpPost("http://havefun.byethost15.com/signup.php?userid=");
+		HttpPost  httppost2 = new HttpPost("http://havefun.byethost15.com/signup.php?userid="+phone_number+"&username="+uName);
 		try {
 			HttpResponse response = httpclient2.execute(httppost2);
 		} catch (ClientProtocolException e) {

@@ -2,14 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/IndianRed"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/buttonSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_up_button" />
-    
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -88,12 +83,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text" />
-
-    <TextView
-        android:id="@+id/TextView04"
+    
+        <Button
+        android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/interest"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:text="@string/sign_up_button" />
+    
+    
 
 </LinearLayout>
