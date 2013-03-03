@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to HaveFun</string>
+    <string name="app_name">HaveFun</string>
+    <string name="sign_up">Create your Profile!</string>
+    
+    <string-array name="gender_array">
+        	<item>Male</item>
+        	<item>Female</item>
+        	<item>Other</item>
+    </string-array>
+    
+    <string name="birthday">Birthday:</string>
+    <string name="gender">Gender:</string>
+    <string name="interest">Interested in:</string>
+    <string name="name">Name:</string>
+    <string name="school">School:</string>
+    <string name="relationship_status">Relationship Status:</string>
+    <string name="sign_up_button">Sign Up</string>
+
+</resources>

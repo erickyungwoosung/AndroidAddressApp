@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Chartreuse"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_width="fill_parent"
+        android:layout_height="424dp"
+        android:layout_weight="1.76"
+        android:gravity="center"
+        android:text="HaveFun"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/White"
+        android:textSize="60px" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START GAME" />
+
+</LinearLayout>
